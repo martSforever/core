@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+
+propertieObj:
+  name: ambzer
+  val : 123
+  seq : 2
