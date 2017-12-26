@@ -69,7 +69,7 @@ public class ImgUtils {
         } else {
             throw new Exception("固定宽度或者固定宽度不能同时为空！");
         }
-        BufferedImage newBi = new BufferedImage(fixWidth, fixHeight, BufferedImage.TYPE_INT_RGB);
+        BufferedImage newBi = new BufferedImage(fixWidth, fixHeight, BufferedImage.TYPE_INT_ARGB);
         Graphics g = newBi.getGraphics();
         g.drawImage(oldBi.getScaledInstance(fixWidth, fixHeight, java.awt.Image.SCALE_SMOOTH), 0, 0, null);
         g.dispose();
